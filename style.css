@@ -1,0 +1,136 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    transition: background 0.4s, color 0.4s;
+  }
+  h1, h2, h3 {
+    margin-bottom: 0.5rem;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: #fff;
+    padding: 4rem 2rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  header p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Sections & Cards */
+  section {
+    margin-bottom: 3rem;
+  }
+  .card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  /* Contact */
+  .contact a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: 600;
+    transition: transform 0.3s;
+  }
+  .contact a:hover {
+    transform: scale(1.05);
+    color: #1d4ed8;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  body.dark .card {
+    background: #1e1e1e;
+    color: #ccc;
+  }
+  body.dark header {
+    background: linear-gradient(135deg, #222, #444);
+  }
+  
+  /* Toggle Button */
+  #darkToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+  
+  /* Scroll to Top */
+  #toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3b82f6;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 1000;
+  }
+  
+  /* Scroll Reveal Animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  
+  
